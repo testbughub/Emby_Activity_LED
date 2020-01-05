@@ -10,7 +10,7 @@ Make sure to use a resistor(330 Ohms) between the Pi and the LED, or you might d
 
 ## Running
 First, you need to create a API key.
-Go to the server dashboard > API and create a new key.
+Go to the server dashboard > API Keys and create a new key.
 
 Paste your API key next to API_KEY, the server IP next to SERVER_IP and the port emby uses next to PORT,
 then run it with python.
