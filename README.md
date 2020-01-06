@@ -18,3 +18,17 @@ Once an activity is detected, the LED will light up.
 
 ## Dependencies
 RPi.GPIO (pip install RPi.GPIO)
+
+## Autostart
+I personally prefer using pm2, but a cronjob works just as well.
+### pm2
+```
+npm install pm2 -g
+pm2 start emby_activity.py
+pm2 save
+```
+### cron
+```
+crontab -e
+@reboot /path/to/script.py
+```
