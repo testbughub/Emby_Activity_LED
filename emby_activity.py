@@ -15,9 +15,9 @@ PORT = ''
 URL = 'http://' + SERVER_IP + ':' + PORT + '/emby/sessions?api_key=' + API_KEY
 
 while True:
+  sleep(10)
   r = requests.get(URL)
   r.status_code
-  sleep(10)
   if 'NowPlayingItem' in r.content:
     print('Activity = 1')
     GPIO.output(pin,GPIO.HIGH)
