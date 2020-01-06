@@ -2,7 +2,7 @@ import requests
 import RPi.GPIO as GPIO
 from time import sleep
 
-pin = '17'
+pin = 17
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
