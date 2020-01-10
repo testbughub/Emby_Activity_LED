@@ -17,7 +17,7 @@ I'm planning on expanding this to use a 7-segment display to display how many us
 ## Raspberry Pi GPIO setup
 Activity LED = 17  
 Transcode LED = 27  
-Active Users = 22  
+Active Users LED = 22  
 Make sure to use a resistor between the Pi and the LED(s), or you might damage your Pi.
 
 ## Running
