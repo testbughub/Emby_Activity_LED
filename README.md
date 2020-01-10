@@ -11,7 +11,7 @@ Lights up the LED if anyone is currently using the service.
 Lights up the LED if transcoding is in use.
 
 #### emby_active_users.py
-Lights up the LED if more than one is using the service.
+Lights up the LED if more than one is using the service.  
 I'm planning on expanding this to use a 7-segment display to display how many users is using the service.
 
 ## Raspberry Pi GPIO setup
