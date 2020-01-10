@@ -4,13 +4,13 @@
 A simple script for Raspberry Pi to light an LED if any user
 is currently using the service.
 
-### emby_activity.py
+#### emby_activity.py
 Lights up the LED if anyone is currently using the service.
 
-### emby_transcode.py
+#### emby_transcode.py
 Lights up the LED if transcoding is in use.
 
-### emby_active_users.py
+#### emby_active_users.py
 Lights up the LED if more than one is using the service.
 I'm planning on expanding this to use a 7-segment display to display how many users is using the service.
 
