@@ -15,17 +15,17 @@ Lights up the LED if more than one is using the service.
 I'm planning on expanding this to use a 7-segment display to display how many users is using the service.
 
 ## Raspberry Pi GPIO setup
-Activity LED = 17
-Transcode LED = 27
-Active Users = 22
+Activity LED = 17  
+Transcode LED = 27  
+Active Users = 22  
 Make sure to use a resistor between the Pi and the LED(s), or you might damage your Pi.
 
 ## Running
-First, you need to create a API key.
+First, you need to create a API key.  
 Go to the server dashboard > API Keys and create a new key.
 
-Paste your API key next to API_KEY, the server IP next to SERVER_IP and the port emby uses next to PORT,
-then run it with python.
+Paste your API key next to API_KEY, the server IP next to SERVER_IP and the port  
+emby uses next to PORT, then run it with python.  
 Once an activity is detected, the LED(s) will light up.
 
 ## Dependencies
