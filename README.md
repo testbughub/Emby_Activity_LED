@@ -4,9 +4,20 @@
 A simple script for Raspberry Pi to light an LED if any user
 is currently using the service.
 
-## Raspberry Pi setup
-The script uses GPIO pin 17 for the activity LED  
-and GPIO 27 for transcoding status. It can be changed if needed.
+### emby_activity.py
+Lights up the LED if anyone is currently using the service.
+
+### emby_transcode.py
+Lights up the LED if transcoding is in use.
+
+### emby_active_users.py
+Lights up the LED if more than one is using the service.
+I'm planning on expanding this to use a 7-segment display to display how many users is using the service.
+
+## Raspberry Pi GPIO setup
+Activity LED = 17
+Transcode LED = 27
+Active Users = 22
 Make sure to use a resistor between the Pi and the LED(s), or you might damage your Pi.
 
 ## Running
@@ -27,6 +38,7 @@ I personally prefer using pm2, but a cronjob works just as well.
 npm install pm2 -g
 pm2 start emby_activity.py
 pm2 start emby_transcode.py
+pm2 start emby_active_users.py
 pm2 save
 ```
 ### cron
@@ -34,3 +46,6 @@ pm2 save
 crontab -e
 @reboot /path/to/script.py
 ```
+
+## Special Thanks
+K900_ @ reddit for helping me with the emby_active_users script.
