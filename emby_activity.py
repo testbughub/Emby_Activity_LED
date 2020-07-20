@@ -10,7 +10,7 @@ GPIO.setup(pin,GPIO.OUT)
 
 API_KEY = ''
 SERVER_IP = ''
-PORT = ''
+PORT = '8096'
 
 URL = 'http://' + SERVER_IP + ':' + PORT + '/emby/sessions?api_key=' + API_KEY
 

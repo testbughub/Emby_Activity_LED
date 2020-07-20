@@ -25,7 +25,7 @@ First, you need to create a API key.
 Go to the server dashboard > API Keys and create a new key.
 
 Paste your API key next to API_KEY, the server IP next to SERVER_IP and the port  
-emby uses next to PORT, then run it with python.  
+emby uses next to PORT (default 8096), then run it with python.  
 Once an activity is detected, the LED(s) will light up.
 
 ## Dependencies
