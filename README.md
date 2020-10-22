@@ -36,6 +36,7 @@ I personally prefer using pm2, but a cronjob works just as well.
 ### pm2
 ```
 npm install pm2 -g
+pm2 startup
 pm2 start emby_activity.py
 pm2 start emby_transcode.py
 pm2 start emby_active_users.py
